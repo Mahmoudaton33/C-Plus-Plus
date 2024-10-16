@@ -75,3 +75,22 @@ int Shallow::Get_data(void)
 {
     return *data;
 }
+
+Deep::Deep(int value)
+{
+    data = new int(value);
+}
+Deep::Deep(const Deep &obj)
+{
+    data = new int(*obj.data);
+    std::cout << "deep constructor is called " << std::endl;
+}
+
+void Deep::Set_data(int value)
+{
+    *data = value;
+}
+int Deep::Get_data(void)
+{
+    return *data;
+}

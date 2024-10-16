@@ -55,4 +55,18 @@ class Shallow
     int Get_data(void);
 
 };
+
+class Deep
+{
+    private:
+    int *data;
+
+
+    public:
+    Deep(int value);
+    Deep(const Deep& obj);
+
+    void Set_data(int value);
+    int Get_data(void);
+};
 #endif

@@ -22,13 +22,23 @@ int main()
     d2.Display_DogInfo();
     */
    //////////////// SHALLOW COPY ///////////////
+   /*
    Shallow sh1(50);
    Shallow sh2 = sh1;
    std::cout << sh1.Get_data() << std::endl;
    sh2.Set_data(99);
    std::cout << sh1.Get_data() << std::endl;
+   */
    ///////////////////////////////////////////
-   
+
+   ///////////////// DEEP COPY //////////////
+   Deep d1(100);
+   Deep d2 = d1;
+
+   d2.Set_data(900);
+   std::cout << d1.Get_data() << std::endl;
+   std::cout << d2.Get_data() << std::endl;
+   //////////////////////////////////////////
     return 0;
 
 }
