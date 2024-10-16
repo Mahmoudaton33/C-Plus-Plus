@@ -23,4 +23,36 @@ public:
     void display() const;
 
 };
+
+class Dog
+{
+    private:
+    std::string name;
+    int age;
+
+    public:
+    Dog(std::string Name , int Age);
+    Dog(const Dog &d);
+    void Set_name(std::string Name);
+    std::string Get_name(void);
+    void Set_age(int Age);
+    int Get_age(void);
+    void Display_DogInfo(void);
+};
+
+
+class Shallow
+{
+    private:
+    int *data;
+
+    public:
+    Shallow(int value);
+    Shallow(const Shallow &obj);
+    
+    ~Shallow();
+    void Set_data(int value);
+    int Get_data(void);
+
+};
 #endif
