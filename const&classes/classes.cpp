@@ -12,7 +12,7 @@ Player::Player(std::string name , int age)
     this->age = age;
 }
 
-std::string &Player::Get_name(void)
+std::string Player::Get_name(void) const
 {
     return this->name;
 }
@@ -21,7 +21,7 @@ void Player::Set_Name(std::string name)
 {
     this->name = name;
 }
-void Player::Display( Player &pl)
+void Player::Display(const Player &pl)
 {
     std::cout << pl.Get_name() << std::endl;
 }
