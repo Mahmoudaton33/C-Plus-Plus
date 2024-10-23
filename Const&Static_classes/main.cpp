@@ -9,6 +9,6 @@
 
 int main()
 {
-    Player pl1("ATON" , 29);
-
+    const Player pl1("ATON" , 29);
+    std::cout << pl1.Get_name() <<std::endl;
 }

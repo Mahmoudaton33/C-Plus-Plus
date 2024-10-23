@@ -15,7 +15,6 @@ class Player
     Player(std::string name , int age);
     std::string Get_name(void) const;
     void Set_Name(std::string name);
-    void Display( const Player &pl);
 };
 
 #endif

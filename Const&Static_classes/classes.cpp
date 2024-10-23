@@ -21,7 +21,4 @@ void Player::Set_Name(std::string name)
 {
     this->name = name;
 }
-void Player::Display(const Player &pl)
-{
-    std::cout << pl.Get_name() << std::endl;
-}
+
